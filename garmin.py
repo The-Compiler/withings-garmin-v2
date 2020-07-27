@@ -18,6 +18,10 @@ class LoginFailed(Exception):
     pass
 
 
+class APIException(Exception):
+    pass
+
+
 class GarminConnect(object):
     LOGIN_URL = 'https://connect.garmin.com/signin'
     UPLOAD_URL = 'https://connect.garmin.com/modern/proxy/upload-service/upload/.fit'
